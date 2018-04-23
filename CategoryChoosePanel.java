@@ -16,11 +16,11 @@ import com.google.gwt.view.client.MultiSelectionModel;
 
 public class CategoryChoosePanel extends HorizontalPanel {
 
-	List<Category<Long>> choseCategoriesList;
-	List<Category<Long>> availableCategoriesList;
+	List<Category> choseCategoriesList;
+	List<Category> availableCategoriesList;
 
-	CellTable<Category<Long>> availableCategoriesTable;
-	CellTable<Category<Long>> chosenCategoriesTable;
+	CellTable<Category> availableCategoriesTable;
+	CellTable<Category> chosenCategoriesTable;
 
 	Button addCategoryButton;
 	Button removeCategoryButton;
@@ -114,20 +114,20 @@ public class CategoryChoosePanel extends HorizontalPanel {
 
 	}
 
-	public List<Category<Long>> getChoseCategoriesList() {
+	public List<Category> getChoseCategoriesList() {
 		return choseCategoriesList;
 	}
 
-	public List<Category<Long>> getAvailableCategoriesList() {
+	public List<Category> getAvailableCategoriesList() {
 		return availableCategoriesList;
 	}
 
-	public void setChoseCategoriesList(List<Category<Long>> choseCategoriesList) {
+	public void setChoseCategoriesList(List<Category> choseCategoriesList) {
 		this.choseCategoriesList = choseCategoriesList;
 		chosenCategoriesTable.setRowData(choseCategoriesList);
 	}
 
-	public void setAvailableCategoriesList(List<Category<Long>> availableCategoriesList) {
+	public void setAvailableCategoriesList(List<Category> availableCategoriesList) {
 		this.availableCategoriesList = availableCategoriesList;
 		availableCategoriesTable.setRowData(availableCategoriesList);
 	}
