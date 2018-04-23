@@ -43,12 +43,12 @@ public class CategoryChoosePanel extends HorizontalPanel {
 
 		availableCategoriesTable = new CellTable<>();
 		availableCategoriesTable.setRowData(availableCategoriesList);
-		MultiSelectionModel<Category<Long>> availableCategoriesSelectionModel = new MultiSelectionModel<Category<Long>>();
+		MultiSelectionModel<Category> availableCategoriesSelectionModel = new MultiSelectionModel<Category>();
 		availableCategoriesTable.setSelectionModel(availableCategoriesSelectionModel);
 
 		chosenCategoriesTable = new CellTable<>();
 		chosenCategoriesTable.setRowData(choseCategoriesList);
-		MultiSelectionModel<Category<Long>> chosenCategoriesSelectionModel = new MultiSelectionModel<Category<Long>>();
+		MultiSelectionModel<Category> chosenCategoriesSelectionModel = new MultiSelectionModel<Category>();
 		chosenCategoriesTable.setSelectionModel(chosenCategoriesSelectionModel);
 
 		addCategoryButton = new Button();
@@ -62,19 +62,19 @@ public class CategoryChoosePanel extends HorizontalPanel {
 		chosenCategoriesScrollPanel.add(chosenCategoriesTable);
 		vailableCategoriesScrollPanel.add(availableCategoriesTable);
 
-		availableCategoriesTable.addColumn(new TextColumn<Category<Long>>() {
+		availableCategoriesTable.addColumn(new TextColumn<Category>() {
 
 			@Override
-			public String getValue(Category<Long> object) {
+			public String getValue(Category object) {
 				return object.getName();
 			}
 
 		}, "Available");
 
-		chosenCategoriesTable.addColumn(new TextColumn<Category<Long>>() {
+		chosenCategoriesTable.addColumn(new TextColumn<Category>() {
 
 			@Override
-			public String getValue(Category<Long> object) {
+			public String getValue(Category object) {
 				return object.getName();
 			}
 
