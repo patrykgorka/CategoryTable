@@ -1,1 +1,1 @@
-Widget z tabelami kategori do formatki dodawania i edytowania produktow.
+Widget z tabelami kategorii do formatki dodawania i edytowania produktow.
