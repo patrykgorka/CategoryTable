@@ -1,7 +1,9 @@
 Widget z tabelami kategorii do formatki dodawania i edytowania produktow.
+Dziala wybieranie wielu i przesylanie wielu kategori naraz z CRTL.
 
 Dane trzeba po stworzeniu obiektu ustawic setami bo inaczej tableki beda puste.
-	
+Do pozyskiwania danych z poszczegolnych table gety.
+
 Przyklad ustawiania danych do formatki dodawania: 
 - W tabeli dostepnych kategori beda znajdowac sie wszystkie dane
 - Tabela z wybranymi kategoriami bedzie pusta

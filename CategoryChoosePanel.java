@@ -30,6 +30,8 @@ public class CategoryChoosePanel extends HorizontalPanel {
 		choseCategoriesList = new ArrayList<>();
 
 		VerticalPanel buttonPanel = new VerticalPanel();
+		buttonPanel.setVerticalAlignment(ALIGN_MIDDLE);
+		buttonPanel.setHorizontalAlignment(ALIGN_CENTER);
 		buttonPanel.setSpacing(5);
 
 		ScrollPanel vailableCategoriesScrollPanel = new ScrollPanel();
